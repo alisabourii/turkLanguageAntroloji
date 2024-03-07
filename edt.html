@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <title>TDVEA</title>
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <video autoplay muted loop id="myVideo">
+                <source src="imags/flagbk.mp4" type="video/mp4">
+        </video>
+        
+        <br>
+        <div class="donemler">
+                <div class="titleText" id="titleText">
+                        <h2 class="titleText">Türk Dili ve Edebiyat Antolojisi</h2>
+                </div>
+                <div id="form" class="form">
+                <div class="islmaonceDiv">
+                        <button onclick="sozuluDonemPlay()">Sözlü Dönem</button>
+                        <p>&#9680;Sözlü dönem, Türklerin yerleşik hayata geçmediği, göçebe bir yaşam sürdüğü dönemlerde ortaya çıkan edebiyattır. Bu dönemin ürünleri, ozan adı verilen kişiler tarafından kopuz eşliğinde söylenen şiirlerden oluşur.</p>
+                        <p>&#9680;Sözlü dönem, Türklerin yerleşik hayata geçmediği, göçebe bir yaşam sürdüğü dönemlerde ortaya çıkan edebiyattır. Bu dönemin ürünleri, ozan adı verilen kişiler tarafından kopuz eşliğinde söylenen şiirlerden oluşur.</p>
+
+                        <h4>&#9680;Sözlü dönem ürünlerinin başlıcaları şunlardır:</h4>
+                        <p>&#128073;Koşuk: Sevgi, doğa, kahramanlık gibi konuları işleyen şiir türüdür.</p>
+                        <p>&#128073;Sagu: Ölen bir kişinin ardından söylenen ağıt türüdür.</p>
+                        <p>&#128073;Öğüt veren, öğüt niteliği taşıyan şiir türüdür.</p>
+                        <p>&#128073;Bir milletin ortak tarihini, kültürünü ve değerlerini yansıtan uzun şiir türüdür.</p>
+
+                        <h4>&#9680;Sözlü dönem ürünlerinin özellikleri şunlardır:</h4>
+                        <p>&#128073;Sözlü olarak üretilir ve kulaktan kulağa aktarılarak varlığını sürdürür.</p>
+                        <p>&#128073;Anonimdir, yani yazarları bilinmez.</p>
+                        <p>&#128073;Hece ölçüsü ile yazılır. Dörtlük nazım birimini kullanır.Uyak düzeni genellikle aaab, cccb, dddb şeklindedir.</p>
+                        
+                </div>
+                <div class="islmaonceDiv">
+                        <button onclick="yaziliDonemPlay()">Yazılı Dönem</button>
+                        <p>&#9680;Göktürk Yazıtları: Göktürkler tarafından yazılmış olan 38 adet yazıttır. Bu yazıtlarda, Göktürklerin tarihi, kültürü ve değerleri anlatılmaktadır.</p>
+                        <p>&#9680;Uygur Metinleri: Uygur Türkleri tarafından yazılmış olan metinlerdir. Bu metinler, daha çok dini içeriklidir.</p>
+                        <h4>&#9680;Yazılı dönem ürünlerinin özellikleri şunlardır:</h4>
+                                <p>&#128073;Yazılı olarak üretilir ve sonraki nesillere yazı yoluyla aktarılır.</p>
+                                <p>&#128073;Yazarları bilinir.</p>
+                                <p>&#128073;örtlük nazım birimini kullanır.</p>
+                                <p>&#128073;Uyak düzeni genellikle aaab, cccb, dddb şeklindedir.</p>
+
+                        <p>&#9680;Yazılı dönem ürünleri, Türk milletinin kültürel değerlerinin gelişmesinde önemli rol oynamıştır. Bu ürünler, Türklerin yazıyı kullanmaya başlamasıyla birlikte, edebiyatlarının daha da zenginleşmesine ve gelişmesine katkı sağlamıştır.</p>
+                        <p>&#9680;İslamiyet öncesi Türk edebiyatı yazılı dönemi, Türk edebiyatında bir dönüm noktası niteliğindedir. Bu döneme kadar sözlü olarak üretilen edebiyat ürünleri, yazılı olarak da üretilmeye başlanmıştır. Bu durum, Türk edebiyatında yeni bir dönemin başlangıcına işaret eder.</p>
+                        
+                </div>
+                </div>
+                <div id="form-bg" class="form-background" onclick="closeForm()"></div>
+                <div id="button" class="open-form-button" onclick="openForm()"><img src="imags/islamiyetoncesi.png" draggable="false"></div>
+
+                <br><br><br><br><br><br><br><br>
+                <div id="form2" class="form2">
+                        <div class="islametkisiDiv">
+                                <button>Halk Edebiyatı</button>
+                                <p>&#9680;Türklerin İslamiyet'e geçişi ile başlayan edebi dönemdir. Bu dönemde, Türklerin İslamiyet'ten önceki edebiyat gelenekleri ile İslamiyet'in etkisi altındaki yeni edebiyat gelenekleri bir arada var olmuştur. Halk edebiyatı, İslamiyet etkisinde gelişen Türk edebiyatı içinde, halkın içinden gelen, halkın duygu ve düşüncelerini yansıtan bir edebiyat türüdür.</p>
+                                <p>&#9680; Halk edebiyatı, sözlü edebiyat geleneğine dayanmaktadır. Bu nedenle, eserleri genellikle saz eşliğinde okunur veya söylenir. </p>
+
+                                <h3>&#9680; Halk edebiyatında kullanılan başlıca türler şunlardır:</h3>
+                                <p>&#128073; Destanlar: Kahramanlık, aşk, din ve efsane gibi konuları işleyen uzun şiirlerdir. Dede Korkut Hikâyeleri, Köroğlu, Battal Gazi Destanı, Alparslan Destanı gibi destanlar, halk edebiyatının en önemli eserleri arasındadır.</p>
+                                <p>&#128073; Koşuklar: Aşk, doğa, kahramanlık gibi konuları işleyen, genellikle hece ölçüsüyle yazılan şiirlerdir.</p>
+                                <p>&#128073; Savlar: Bilge kişilerin öğüt verici sözlerini içeren şiirlerdir.</p>
+                                <p>&#128073; Sagular: Ağıt niteliği taşıyan şiirlerdir</p>
+                                <p>&#128073; Türküler: Aşk, doğa, hüzün, neşe gibi konuları işleyen, genellikle hece ölçüsüyle yazılan şiirlerdir.</p>
+                                <p>&#9680; Halk edebiyatı, İslamiyet etkisinde gelişen Türk edebiyatı içinde önemli bir yere sahiptir. Bu edebiyat, Türk kültürünün ve geleneklerinin en önemli kaynaklarından biridir.</p>
+
+                        </div>
+                        <div class="islametkisiDiv">
+                                <button>Divan Edebiyatı</button>
+                                <p>&#9680;Divan edebiyatı, İslamiyet etkisinde gelişen Türk edebiyatı içinde, seçkin bir zümrenin edebiyatıdır. Bu edebiyat, Arap ve Fars edebiyatlarının etkisi altında gelişmiştir.</p>
+
+                                <h3>&#9680;Divan edebiyatında kullanılan başlıca türler şunlardır:</h3>
+                                <p>&#128073; Gazel: Aşk, tabiat, ayrılık, özlem gibi konuları işleyen, genellikle 7'li hece ölçüsüyle yazılan şiir türüdür.</p>
+                                <p>&#128073; Kaside: Övgü, yergi, öğüt gibi konuları işleyen, genellikle 11'li hece ölçüsüyle yazılan uzun şiir türüdür.</p>
+                                <p>&#128073; Mesnevi: Uzun hikâyeleri anlatan, genellikle 11'li hece ölçüsüyle yazılan nazım türüdür.</p>
+                                <p>&#128073; Şarkı: Aşk, ayrılık, hüzün gibi konuları işleyen, genellikle 5'li hece ölçüsüyle yazılan şiir türüdür.</p>
+                                <p>&#128073; Tuyuğ: Dört mısralık, genellikle 7'li hece ölçüsüyle yazılan şiir türüdür.</p>
+                                <p>&#128073;Rubai: Dört mısralık, genellikle 5'li hece ölçüsüyle yazılan şiir türüdür.</p>
+                                <p>&#9680; Divan edebiyatında kullanılan dil, ağır ve süslü bir dildir. Bu dil, Arapça ve Farsça kelime ve tamlamalarla zenginleştirilmiştir. Divan edebiyatında kullanılan edebiyat gelenekleri de Arap ve Fars edebiyatlarından alınmıştır. Örneğin, gazel, kaside, mesnevi gibi nazım şekilleri Arap ve Fars edebiyatından gelmiştir.</p>
+                        </div>
+                </div>
+                <div id="form-bg2" class="form-background2" onclick="closeForm2()"></div>
+                <div id="button2" class="open-form-button2" onclick="openForm2()"><img src="imags/islamiyetETKİSİS.png" draggable="false"></div>
+                
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div id="form3" class="form3">
+                        <div class="batietkisiDiv">
+                                <button>Tanzımat</button>
+                        </div>
+                        <div class="batietkisiDiv">
+                                <button>Servetıfünun</button>
+                        </div>
+                        <div class="batietkisiDiv">
+                                <button>Fecraı</button>
+                        </div>
+                        <div class="batietkisiDiv">
+                                <button>Milli</button>
+                        </div>
+                        <div class="batietkisiDiv">
+                                <button>Cumhuriyet</button>
+                        </div>
+                </div>
+                <div id="form-bg3" class="form-background3" onclick="closeForm3()"></div>
+                <div id="button3" class="open-form-button3" onclick="openForm3()"><img src="imags/batietkisi.png" draggable="false"></div>
+                
+        </div>
+        <script src="app.js">
+        </script> 
+</body>
+</html>
