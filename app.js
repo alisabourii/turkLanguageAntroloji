@@ -69,3 +69,8 @@ var milliSound = Audio("sound/fac.mp3")
 function milliPlay(){
         milliPlay.play();
 }
+function incele(donem){
+  url = 'https://tr.wikipedia.org/wiki/'+donem;
+  window.open(url,'_blank');
+
+}
