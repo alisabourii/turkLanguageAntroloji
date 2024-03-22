@@ -23,3 +23,9 @@ ________________________________________________________________________________
 Second Season of Turkish Language is islam influence
 
 <img width="946" alt="d2" src="https://github.com/alisabourii/turkLanguageAntroloji/assets/72344723/f8240c45-f9ba-45ff-8639-aca9d5a729dd">
+
+_______________________________________________________________________________________________________________________________________________________
+And last Season is western influence Turkish Language
+
+<img width="946" alt="d3" src="https://github.com/alisabourii/turkLanguageAntroloji/assets/72344723/623b3bc1-b2f4-493a-a710-aab622bad2c2">
+
