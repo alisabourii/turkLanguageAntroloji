@@ -8,14 +8,14 @@
 
 </head>
 <body>
-        <video autoplay muted loop id="myVideo" width="125%">
+        <!--<video autoplay muted loop id="myVideo" width="125%" height="300%">
                 <source src="imags/flagbk.mp4" type="video/mp4">
-        </video>
+        </video> -->
         
         <br>
         <div class="donemler">
                 <div class="titleText" id="titleText">
-                        <h2 class="titleText">Türk Dili ve Edebiyat Antolojisi</h2>
+                        <h2 class="titleText">Türk Dili ve Edebiyatın Tarihi</h2>
                 </div>
                 <div id="form" class="form">
                 <div class="islmaonceDiv">
@@ -56,7 +56,7 @@
                 <br><br><br><br><br><br><br><br>
                 <div id="form2" class="form2">
                         <div class="islametkisiDiv">
-                                <button type="button" class="btn btn-info">Halk Edebiyatı</button>
+                                <button type="button" onclick="halkDonemPlay()" class="btn btn-info">Halk Edebiyatı</button>
                                 <p>&#9680;Türklerin İslamiyet'e geçişiyle başlayan edebi dönem, Türklerin İslamiyet öncesi edebiyat geleneği ile İslamiyet'in etkisi altındaki yeni edebiyat geleneğinin bir arada var olduğu bir dönemi ifade eder. Bu dönemde halk edebiyatı, halkın duygu ve düşüncelerini yansıtan bir tür olarak İslamiyet etkisi altında gelişmiştir.</p>
                                 <p>&#9680; Halk edebiyatı, sözlü edebiyat geleneğine dayanmaktadır. Bu nedenle, eserleri genellikle saz eşliğinde okunur veya söylenir. </p>
 
@@ -66,12 +66,11 @@
                                 <p>&#128073; Savlar: Bilge kişilerin öğüt verici sözlerini içeren şiirlerdir.</p>
                                 <p>&#128073; Sagular: Ağıt niteliği taşıyan şiirlerdir</p>
                                 <p>&#128073; Türküler: Aşk, doğa, hüzün, neşe gibi konuları işleyen, genellikle hece ölçüsüyle yazılan şiirlerdir.</p>
-                                <p>&#9680; Halk edebiyatı, İslamiyet etkisinde gelişen Türk edebiyatı içinde önemli bir yere sahiptir. Bu edebiyat, Türk kültürünün ve geleneklerinin en önemli kaynaklarından biridir.</p>
                                 
-                                <button type="button" class="btn btn-primary" onclick="searchDonem('Türk halk edebiyatı')">Detay</button>
+                                <button type="button" class="btn btn-primary" id="btnStyle" onclick="searchDonem('Türk halk edebiyatı')">Detay</button>
                         </div>
                         <div class="islametkisiDiv">
-                                <button type="button" class="btn btn-info">Divan Edebiyatı</button>
+                                <button type="button" onclick="divanDonemPlay()" class="btn btn-info">Divan Edebiyatı</button>
                                 <p>&#9680;Divan edebiyatı, İslamiyet etkisinde gelişen Türk edebiyatı içinde, seçkin bir zümrenin edebiyatıdır. Bu edebiyat, Arap ve Fars edebiyatlarının etkisi altında gelişmiştir.</p>
 
                                 <h5>&#9680;Divan edebiyatında kullanılan başlıca türler şunlardır:</h5>
@@ -83,11 +82,11 @@
                                 <p>&#128073;Rubai: Dört mısralık, genellikle 5'li hece ölçüsüyle yazılan şiir türüdür.</p>
                                 <p>&#9680; Divan edebiyatında kullanılan dil, ağır ve süslü bir dildir. Bu dil, Arapça ve Farsça kelime ve tamlamalarla zenginleştirilmiştir. Divan edebiyatında kullanılan edebiyat gelenekleri de Arap ve Fars edebiyatlarından alınmıştır. Örneğin, gazel, kaside, mesnevi gibi nazım şekilleri Arap ve Fars edebiyatından gelmiştir.</p>
 
-                                <button type="button" class="btn btn-primary" onclick="searchDonem('Divan edebiyatı')">Detay</button>
+                                <button type="button" class="btn btn-primary" id="btnStyle" onclick="searchDonem('Divan edebiyatı')">Detay</button>
                         </div>
                 </div>
                 <div id="form-bg2" class="form-background2" onclick="closeForm2()"></div>
-                <div id="button2" class="open-form-button2" onclick="openForm2()"><img src="imags/islamiyetETKİSİS.png" draggable="false"></div>
+                <div id="button2" class="open-form-button2" onclick="openForm2()"><img src="imags/İslamiyetEtkisi.png" draggable="false"></div>
                 
                 <br>
                 <br>
@@ -101,43 +100,43 @@
                 <br>
                 <div id="form3" class="form3">
                         <div class="batietkisiDiv">
-                                <button type="button" class="btn btn-info">Tanzimat</button>
+                                <button type="button" onclick="tanzimartDonemPlay()" class="btn btn-info">Tanzimat</button>
                                 <p style="font-size: 16px;">
                                         Tanzimat Dönemi, Osmanlı Devleti'nin modernleşme çabalarını temsil eden bir reform sürecidir; Gülhane Hatt-ı Şerifi ve Tanzimat Fermanı gibi belgelerle temel haklar ve yönetimde yapılan değişikliklerin yanı sıra, eğitim ve kültür alanlarında da önemli ilerlemeler kaydedilmiştir, bu dönemde Osmanlı toplumuna matbaa, tiyatro gibi modern kurumlar dahil olmuş ve Türk edebiyatı ile sanatının gelişimine katkı sağlanmıştır.
                                 </p>
-                                <button type="button" class="btn btn-primary" onclick="searchDonem('Tanzimat')">Detay</button>
+                                <button type="button" class="btn btn-primary" id="btnStyle" onclick="searchDonem('Tanzimat')">Detay</button>
 
                         </div>
                         <div class="batietkisiDiv">
-                                <button type="button" class="btn btn-info">Servet-i Fünûn</button>
+                                <button type="button" onclick="sifDonemPlay()" class="btn btn-info">Servet-i</button>
                                 <p style="color: black; font-size: 14px;">
                                         Servet-i Fünun Dönemi, 1896'da Tevfik Fikret'in "Servet-i Fünun" dergisini çıkarmasıyla başlayan ve 1909'da II. Meşrutiyet'in ilanıyla sona eren bir edebiyat ve sanat akımıdır. Bu dönemde, Batı edebiyat akımlarından etkilenerek sanat için sanat anlayışı benimsenmiş, bireysel duygular ve estetizm ön plana çıkarılmıştır. Servet-i Fünun edebiyatının genel özellikleri arasında, sanat için sanat anlayışı, bireysel duygulara ve estetizme önem verme, mükemmeliyetçilik, dil ve üslupta Arapça ve Farsça kelimelerin yoğun kullanımı, sembolizm ve hayal gücü gibi unsurlar yer alır. Bu dönemdeki önemli yazarlar arasında Tevfik Fikret, Cenap Şahabettin, Halit Ziya Uşaklıgil, Hüseyin Cahit Yalçın ve Mehmet Rauf yer alır.
                                 </p>
-                                <button type="button" class="btn btn-primary" onclick="searchDonem('Servet-i Fünûn edebiyatı')">Detay</button>
+                                <button type="button" class="btn btn-primary" id="btnStyle" onclick="searchDonem('Servet-i Fünûn edebiyatı')">Detay</button>
 
                         </div>
                         <div class="batietkisiDiv">
-                                <button type="button" class="btn btn-info">Fecr-i Âtî</button>
+                                <button type="button" onclick="fecraiDonemPlay()" class="btn btn-info">Fecr-i Âtî</button>
                                 <p style="font-size: 14px;">
                                         Fecr-i Âti Dönemi, 1909'da II. Meşrutiyet'in ilanıyla başlayan ve 1923'te Cumhuriyetin ilanıyla sona eren bir edebiyat ve sanat akımıdır. Bu dönemde, edebiyatta milliyetçilik ve toplumculuk akımları ön plana çıkmış, eserlerde vatan sevgisi, milli benlik ve sosyal meseleler gibi temalar işlenmiştir. Fecr-i Âti edebiyatının genel özellikleri arasında, milliyetçilik ve toplumculuk akımlarının etkisi, sade Türkçe kullanımı, halk şiirinden ve türkülerinden esinlenme, roman ve tiyatro gibi türlerde eser verme gibi unsurlar yer alır. Bu dönemdeki önemli yazarlar arasında Mehmet Akif Ersoy, Ziya Gökalp, Yakup Kadri Karaosmanoğlu, Ömer Seyfettin ve Refik Halit Karay yer alır.
                                 </p>
-                                <button type="button" class="btn btn-primary" onclick="searchDonem('Fecr-i Âtî')">Detay</button>
+                                <button type="button" class="btn btn-primary" id="btnStyle" onclick="searchDonem('Fecr-i Âtî')">Detay</button>
                         </div>
                         <div class="batietkisiDiv">
-                                <button type="button" class="btn btn-info">Milli</button>
+                                <button type="button" onclick="milliDonemPlay()" class="btn btn-info">Milli</button>
                                 <p style="color: black; font-size: 14px;">
                                         Milli Edebiyat Dönemi, 1923'te Cumhuriyetin ilanıyla başlayan ve 1950'lere kadar devam eden bir edebiyat ve sanat akımıdır. Bu dönemde, edebiyatta milliyetçilik akımı ön plana çıkmış, eserlerde milli benlik, dil ve tarih bilinci gibi temalar işlenmiştir. Milli Edebiyat Dönemi'nin genel özellikleri arasında, milliyetçilik akımının etkisi, sade Türkçe kullanımı, halk edebiyatından esinlenme, roman, tiyatro ve şiir gibi türlerde eser verme gibi unsurlar yer alır. Bu dönemdeki önemli yazarlar arasında Ömer Seyfettin, Yakup Kadri Karaosmanoğlu, Refik Halit Karay, Mehmet Rauf, Ahmet Hamdi Tanpınar ve Yahya Kemal Beyatlı yer alır.
                                 </p>
-                        <button type="button" class="btn btn-primary" onclick="searchDonem('Millî Edebiyat')">Detay</button>
+                        <button type="button" class="btn btn-primary" id="btnStyle" onclick="searchDonem('Millî Edebiyat')">Detay</button>
 
                         </div>
                         <div class="batietkisiDiv">
-                                <button type="button" class="btn btn-info">Cumhuriyet</button>
+                                <button type="button" onclick="cumhuriyetDonemPlay()" class="btn btn-info">Cumhuriyet</button>
                                 <p>
-                                        Cumhuriyet Dönemi Edebiyatı, 1923 yılında Türkiye Cumhuriyeti'nin kurulmasıyla başlayan ve günümüze kadar devam eden bir edebiyat dönemidir. Bu dönem, edebiyatta çeşitli akımların ve eğilimlerin görüldüğü, Türk edebiyatının zenginleştiği ve dünya edebiyatıyla etkileşime girdiği bir dönemdir.
+                                        Cumhuriyet Dönemi Edebiyatı, Türkiye'nin siyasi ve toplumsal dönüşümüyle birlikte çağdaşlaşma sürecine paralel olarak oluşan bir edebiyat geleneğidir. Bu dönemde modernizm, realizm, natüralizm gibi farklı akımların yanı sıra milli edebiyat anlayışının izleri de görülmektedir. Ayrıca, Cumhuriyet'in kuruluşuyla birlikte dil ve kültür politikalarının etkisiyle Türkçenin yeniden yapılandırılması süreci de edebiyata yansımıştır. Bu süreç, Türk edebiyatının kimlik arayışını ve uluslararası alanda tanınmasını sağlamıştır.
 
                                 </p>
-                        <button type="button" class="btn btn-primary" onclick="searchDonem('Cumhuriyet dönemi Türk edebiyatı')">Detay</button>
+                        <button type="button" class="btn btn-primary" id="btnStyle" onclick="searchDonem('Cumhuriyet dönemi Türk edebiyatı')">Detay</button>
                         </div>
                 </div>
                 <div id="form-bg3" class="form-background3" onclick="closeForm3()"></div>
@@ -147,4 +146,4 @@
         <script src="app.js">
         </script> 
 </body>
-</html>
+</html>  
